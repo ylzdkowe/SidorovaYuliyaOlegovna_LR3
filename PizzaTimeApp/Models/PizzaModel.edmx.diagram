@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="054abec4749946f7b3a3c2b76310605b" Name="Diagram1">
+        <EntityTypeShape EntityType="PizzaTimeModel.categories" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PizzaTimeModel.clients" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PizzaTimeModel.couriers" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PizzaTimeModel.order_items" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PizzaTimeModel.orders" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PizzaTimeModel.payment_methods" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PizzaTimeModel.payments" Width="1.5" PointX="8.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PizzaTimeModel.products" Width="1.5" PointX="3" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PizzaTimeModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="7.5" IsExpanded="true" />
+        <AssociationConnector Association="PizzaTimeModel.FK__products__catego__286302EC" ManuallyRouted="false" />
+        <AssociationConnector Association="PizzaTimeModel.FK__orders__client_i__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="PizzaTimeModel.FK__orders__courier___34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="PizzaTimeModel.FK__order_ite__order__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="PizzaTimeModel.FK__order_ite__produ__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="PizzaTimeModel.FK__payments__order___412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="PizzaTimeModel.FK__payments__method__4222D4EF" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="PizzaTimeModel.Users" Width="1.5" PointX="6" PointY="6.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

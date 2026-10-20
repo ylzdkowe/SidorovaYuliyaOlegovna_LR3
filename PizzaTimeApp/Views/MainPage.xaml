@@ -1,0 +1,30 @@
+﻿<Page x:Class="PizzaTimeApp.Views.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Главное меню" Height="450" Width="800">
+    <Grid Background="#F0F0F0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Background="#333" Padding="10" Grid.Row="0">
+            <Grid>
+                <TextBlock x:Name="TxtWelcome" Foreground="White" FontSize="16" VerticalAlignment="Center"/>
+                <Button Content="Выйти" HorizontalAlignment="Right" Width="100" Click="BtnLogout_Click" Background="#C00" Foreground="White"/>
+            </Grid>
+        </Border>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Главное меню" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,30"/>
+
+            <Button Content="Оформить заказ" Width="250" Height="40" Margin="0,0,0,10" Click="BtnMakeOrder_Click"/>
+            <Button Content="Мои заказы" Width="250" Height="40" Margin="0,0,0,10" Click="BtnMyOrders_Click"/>
+
+            <Button x:Name="BtnManageOrders" Content="Управление заказами" Width="250" Height="40" Margin="0,0,0,10" Click="BtnManageOrders_Click"/>
+            <Button x:Name="BtnManageMenu" Content="Управление меню" Width="250" Height="40" Margin="0,0,0,10" Click="BtnManageMenu_Click"/>
+
+            <Button x:Name="BtnManageUsers" Content="Управление пользователями" Width="250" Height="40" Click="BtnManageUsers_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
